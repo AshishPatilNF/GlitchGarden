@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    float walkSpeed = 1f;
+    float movementSpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,11 @@ public class Attacker : MonoBehaviour
 
     private void Movement()
     {
-        transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
+        transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
+    }
+
+    public void SetMovementSpeed(float speed)
+    {
+        movementSpeed = speed;
     }
 }
