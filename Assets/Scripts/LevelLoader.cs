@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    [SerializeField]
+    GameObject cleanUpContainer;
+
     int currentIndex;
 
     private void Start()
@@ -31,5 +34,10 @@ public class LevelLoader : MonoBehaviour
     public void QuitApp()
     {
         Application.Quit();
+    }
+
+    public Transform GetCleanUpContainer()
+    {
+        return cleanUpContainer.transform;
     }
 }
