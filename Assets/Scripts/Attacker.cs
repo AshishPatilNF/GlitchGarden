@@ -23,7 +23,7 @@ public class Attacker : MonoBehaviour
         transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
     }
 
-    public void SetMovementSpeed(float speed)
+    private void SetMovementSpeed(float speed)
     {
         movementSpeed = speed;
     }
