@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4600333784235918428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4348938676324304805}
   - component: {fileID: 4348938676324304807}
   - component: {fileID: 3254093710275323043}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CactusDefender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
