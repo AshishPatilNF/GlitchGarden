@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField]
-    GameObject defenderPrefab;
+    Defender defenderPrefab;
 
     LevelLoader levelLoading;
 
@@ -16,8 +15,16 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GameObject newCactus = Instantiate(defenderPrefab, GetSquareClicked(), Quaternion.identity);
-        newCactus.transform.parent = levelLoading.GetCleanUpContainer();
+        if(defenderPrefab)
+        {
+            GameObject newCactus = Instantiate(defenderPrefab.gameObject, GetSquareClicked(), Quaternion.identity);
+            newCactus.transform.parent = levelLoading.GetCleanUpContainer();
+        }
+    }
+
+    public void SetSelectedDefender(Defender slectedDefender)
+    {
+        defenderPrefab = slectedDefender;
     }
 
     private Vector2 GetSquareClicked()
