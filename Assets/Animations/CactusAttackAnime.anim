@@ -168,7 +168,7 @@ AnimationClip:
     - time: 3.0416667
       value: {fileID: -8861606884115347523, guid: 82abdacc58cee394cb1e115516656e98, type: 3}
     attribute: m_Sprite
-    path: 
+    path: CactusDefender
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 24
@@ -179,7 +179,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1056919906
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -285,7 +285,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.25
+  - time: 1.5
+    functionName: AttackZucchini
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.7083333
     functionName: AttackZucchini
     data: 
     objectReferenceParameter: {fileID: 0}

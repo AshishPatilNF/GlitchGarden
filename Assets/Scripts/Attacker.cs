@@ -14,6 +14,9 @@ public class Attacker : MonoBehaviour
 
     private LevelLoader levelLoad;
 
+    [SerializeField]
+    private bool vulnerable = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +39,16 @@ public class Attacker : MonoBehaviour
         movementSpeed = speed;
     }
 
+    private void SetVulnerability()
+    {
+        vulnerable = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damage = other.GetComponent<DamageDealer>();
 
-        if(damage)
+        if(damage && vulnerable)
         {
             health -= damage.GetDamage();
 
