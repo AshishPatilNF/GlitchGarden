@@ -13,7 +13,6 @@ public class Defender : MonoBehaviour
     void Start()
     {
         starsDispaly = FindObjectOfType<StartsDisplay>();
-        starsDispaly.SpendStars(cost);
     }
 
     // Update is called once per frame
@@ -25,5 +24,10 @@ public class Defender : MonoBehaviour
     private void AddStars(int amount)
     {
         starsDispaly.AddStars(amount);
+    }
+
+    public int GetDefenderCost()
+    {
+        return cost;
     }
 }

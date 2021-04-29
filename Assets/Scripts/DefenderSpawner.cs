@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    Defender defenderPrefab;
+    Defender defender;
+
+    StartsDisplay starsDisplay;
 
     LevelLoader levelLoading;
 
     private void Start()
     {
         levelLoading = FindObjectOfType<LevelLoader>();
+        starsDisplay = FindObjectOfType<StartsDisplay>();
     }
 
     private void OnMouseDown()
     {
-        if(defenderPrefab)
+        if(defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
         {
-            GameObject newCactus = Instantiate(defenderPrefab.gameObject, GetSquareClicked(), Quaternion.identity);
-            newCactus.transform.parent = levelLoading.GetCleanUpContainer();
+            starsDisplay.SpendStars(defender.GetDefenderCost());
+            GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
+            newDefender.transform.parent = levelLoading.GetCleanUpContainer();
         }
     }
 
     public void SetSelectedDefender(Defender slectedDefender)
     {
-        defenderPrefab = slectedDefender;
+        defender = slectedDefender;
     }
 
     private Vector2 GetSquareClicked()

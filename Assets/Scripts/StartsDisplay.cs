@@ -42,4 +42,9 @@ public class StartsDisplay : MonoBehaviour
             UpdateStars();
         }
     }
+
+    public bool HasEnoughStars(int amount)
+    {
+        return stars >= amount;
+    }
 }
