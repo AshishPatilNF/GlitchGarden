@@ -21,4 +21,9 @@ public class Defender : MonoBehaviour
     {
         
     }
+
+    private void AddStars(int amount)
+    {
+        starsDispaly.AddStars(amount);
+    }
 }
