@@ -12,10 +12,13 @@ public class DefenderCactus : MonoBehaviour
 
     AttackerSpawner laneSpawner;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         levelLoading = FindObjectOfType<LevelLoader>();
+        animator = GetComponent<Animator>();
         SetAttackerSpawner();
     }
 
@@ -24,11 +27,11 @@ public class DefenderCactus : MonoBehaviour
     {
         if(laneSpawner.transform.childCount <= 0)
         {
-            Debug.Log("No Attacker in lane");
+            animator.SetBool("isIdel", true);
         }
         else
         {
-            Debug.Log("Attacker in lane");
+            animator.SetBool("isIdel", false);
         }
     }
 
