@@ -6,7 +6,7 @@ using UnityEngine;
 public class DefenderCactus : MonoBehaviour
 {
     [SerializeField]
-    GameObject zucchini, gun;
+    GameObject projectile, gun;
 
     LevelLoader levelLoading;
 
@@ -37,7 +37,7 @@ public class DefenderCactus : MonoBehaviour
 
     private void AttackZucchini()
     {
-        GameObject newZucchi = Instantiate(zucchini, gun.transform.position, Quaternion.identity);
+        GameObject newZucchi = Instantiate(projectile, gun.transform.position, Quaternion.identity);
         newZucchi.transform.parent = levelLoading.GetCleanUpContainer();
     }
 
