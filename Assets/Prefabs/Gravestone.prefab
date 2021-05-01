@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659300442}
   - component: {fileID: 1659300443}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4773947362159360376}
   - component: {fileID: 4261595117819985765}
   - component: {fileID: 4773947362159360377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gravestone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ Animator:
   m_GameObject: {fileID: 4773947362159360372}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 12c767376afa5404eb10c223b9b0f20d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
