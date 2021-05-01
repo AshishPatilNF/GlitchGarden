@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
+        if (defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
         {
             starsDisplay.SpendStars(defender.GetDefenderCost());
             GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
