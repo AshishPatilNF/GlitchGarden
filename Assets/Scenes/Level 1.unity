@@ -1760,6 +1760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2511724846574615956, guid: 2652f0c71d5d6674b99dd865d1260223, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5588022780430813270, guid: 2652f0c71d5d6674b99dd865d1260223, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1875,6 +1879,10 @@ PrefabInstance:
     - target: {fileID: 6020247185042492611, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
       propertyPath: m_Name
       value: Trophy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213354469555771150, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}

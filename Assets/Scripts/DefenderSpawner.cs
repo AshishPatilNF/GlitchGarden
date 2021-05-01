@@ -11,6 +11,8 @@ public class DefenderSpawner : MonoBehaviour
 
     LevelLoader levelLoading;
 
+    List<Vector2> gridOccupancy = new List<Vector2>();
+
     private void Start()
     {
         levelLoading = FindObjectOfType<LevelLoader>();
@@ -19,12 +21,26 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
+        if (!IsOccupied() && defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
         {
             starsDisplay.SpendStars(defender.GetDefenderCost());
             GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
             newDefender.transform.parent = levelLoading.GetCleanUpContainer();
+            gridOccupancy.Add(newDefender.transform.position);
         }
+    }
+
+    private bool IsOccupied()
+    {
+        // Can be replaced by enabling box colliders on Defenders
+        foreach(Vector2 grid in gridOccupancy)
+        {
+            if(grid.Equals(GetSquareClicked()))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void SetSelectedDefender(Defender slectedDefender)
