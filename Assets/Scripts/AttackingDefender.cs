@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenderCactus : MonoBehaviour
+public class AttackingDefender : MonoBehaviour
 {
     [SerializeField]
     GameObject projectile, gun;

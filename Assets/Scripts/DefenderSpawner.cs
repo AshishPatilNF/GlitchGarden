@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    Defender defender;
+    ResourceDefender defender;
 
     StartsDisplay starsDisplay;
 
@@ -43,7 +43,7 @@ public class DefenderSpawner : MonoBehaviour
         return false;
     }
 
-    public void SetSelectedDefender(Defender slectedDefender)
+    public void SetSelectedDefender(ResourceDefender slectedDefender)
     {
         defender = slectedDefender;
     }
