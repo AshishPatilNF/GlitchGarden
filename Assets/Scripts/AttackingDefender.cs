@@ -35,7 +35,7 @@ public class AttackingDefender : MonoBehaviour
         }
     }
 
-    private void AttackZucchini()
+    private void AttackProjectile()
     {
         GameObject newZucchi = Instantiate(projectile, gun.transform.position, Quaternion.identity);
         newZucchi.transform.parent = levelLoading.GetCleanUpContainer();
