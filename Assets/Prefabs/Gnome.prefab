@@ -220,3 +220,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 6386455835522922041, guid: a367a7599c8820a4a86fd7f33634431f, type: 3}
   gun: {fileID: 5488313863967693617}
+  laner: 0

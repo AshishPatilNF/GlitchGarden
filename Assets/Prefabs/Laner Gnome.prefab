@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 6386455835522922041, guid: a367a7599c8820a4a86fd7f33634431f, type: 3}
   gun: {fileID: 2646613039192362397}
+  laner: 0
 --- !u!1 &2646613038618503342
 GameObject:
   m_ObjectHideFlags: 0

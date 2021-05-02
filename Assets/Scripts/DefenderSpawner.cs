@@ -21,7 +21,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!IsOccupied() && defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
+        if (!IsOccupied(GetSquareClicked()) && defender && starsDisplay.HasEnoughStars(defender.GetDefenderCost()))
         {
             starsDisplay.SpendStars(defender.GetDefenderCost());
             GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
@@ -30,12 +30,12 @@ public class DefenderSpawner : MonoBehaviour
         }
     }
 
-    private bool IsOccupied()
+    public bool IsOccupied(Vector2 tryGrid)
     {
         // Can be replaced by enabling box colliders on Defenders
         foreach(Vector2 grid in gridOccupancy)
         {
-            if(grid.Equals(GetSquareClicked()))
+            if(grid.Equals(tryGrid))
             {
                 return true;
             }

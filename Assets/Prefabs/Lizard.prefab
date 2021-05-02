@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84511b9790f0f044b446e243f07c11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  health: 20
   vulnerable: 0
 --- !u!114 &81913308099389155
 MonoBehaviour:
