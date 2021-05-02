@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    ResourceDefender defender;
+    DefenderResource defender;
 
     StartsDisplay starsDisplay;
 
@@ -26,8 +26,17 @@ public class DefenderSpawner : MonoBehaviour
             starsDisplay.SpendStars(defender.GetDefenderCost());
             GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
             newDefender.transform.parent = levelLoading.GetCleanUpContainer();
-            gridOccupancy.Add(newDefender.transform.position);
         }
+    }
+
+    public void AddGridOccupancy(Vector2 gridOccu)
+    {
+        gridOccupancy.Add(gridOccu);
+    }
+
+    public void RemoveGridOccupancy(Vector2 gridOccu)
+    {
+        gridOccupancy.Remove(gridOccu);
     }
 
     public bool IsOccupied(Vector2 tryGrid)
@@ -43,7 +52,7 @@ public class DefenderSpawner : MonoBehaviour
         return false;
     }
 
-    public void SetSelectedDefender(ResourceDefender slectedDefender)
+    public void SetSelectedDefender(DefenderResource slectedDefender)
     {
         defender = slectedDefender;
     }

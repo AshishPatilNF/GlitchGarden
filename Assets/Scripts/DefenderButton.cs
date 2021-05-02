@@ -5,7 +5,7 @@ using UnityEngine;
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField]
-    ResourceDefender defendPrefab;
+    DefenderResource defendPrefab;
 
     DefenderSpawner defendSpawn;
 

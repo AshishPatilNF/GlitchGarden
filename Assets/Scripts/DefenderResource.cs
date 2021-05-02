@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceDefender : MonoBehaviour
+public class DefenderResource : MonoBehaviour
 {
     [SerializeField]
     int cost = 100;
@@ -12,6 +12,7 @@ public class ResourceDefender : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindObjectOfType<DefenderSpawner>().AddGridOccupancy(transform.position);
         starsDispaly = FindObjectOfType<StartsDisplay>();
     }
 

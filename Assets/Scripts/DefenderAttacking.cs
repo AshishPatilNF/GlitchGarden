@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackingDefender : MonoBehaviour
+public class DefenderAttacking : MonoBehaviour
 {
     [SerializeField]
     GameObject projectile, gun;
@@ -19,9 +19,12 @@ public class AttackingDefender : MonoBehaviour
 
     Animator animator;
 
+    DefenderSpawner defenderSpawner;
+
     // Start is called before the first frame update
     void Start()
     {
+        defenderSpawner = FindObjectOfType<DefenderSpawner>();
         spawners = FindObjectsOfType<AttackerSpawner>();
         levelLoading = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();
@@ -69,10 +72,12 @@ public class AttackingDefender : MonoBehaviour
         {
             foreach(AttackerSpawner spawner in spawners)
             {
-                if(spawner.transform.childCount > 0)
+                if(spawner.transform.childCount > 0 && !defenderSpawner.IsOccupied(new Vector2(transform.position.x, spawner.transform.position.y)))
                 {
+                    defenderSpawner.RemoveGridOccupancy(transform.position);
                     laneSpawner = spawner;
                     transform.position = new Vector2(transform.position.x, spawner.transform.position.y);
+                    defenderSpawner.AddGridOccupancy(transform.position);
                 }
             }
         }

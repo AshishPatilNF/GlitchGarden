@@ -58,7 +58,7 @@ public class Attacker : MonoBehaviour
     {
         GameObject otherGameobject = other.gameObject;
         DamageDealer damage = otherGameobject.GetComponent<DamageDealer>();
-        ResourceDefender defender = otherGameobject.GetComponent<ResourceDefender>();
+        DefenderResource defender = otherGameobject.GetComponent<DefenderResource>();
 
         if (damage && vulnerable)
         {
