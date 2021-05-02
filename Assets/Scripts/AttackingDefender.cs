@@ -8,15 +8,21 @@ public class AttackingDefender : MonoBehaviour
     [SerializeField]
     GameObject projectile, gun;
 
+    [SerializeField]
+    bool laner = false;
+
     LevelLoader levelLoading;
 
     AttackerSpawner laneSpawner;
+
+    AttackerSpawner[] spawners; 
 
     Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        spawners = FindObjectsOfType<AttackerSpawner>();
         levelLoading = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();
         SetAttackerSpawner();
@@ -25,6 +31,11 @@ public class AttackingDefender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(laner)
+        {
+            Lanning();
+        }
+
         if(laneSpawner.transform.childCount <= 0)
         {
             animator.SetBool("isIdel", true);
@@ -43,13 +54,26 @@ public class AttackingDefender : MonoBehaviour
 
     private void SetAttackerSpawner()
     {
-        AttackerSpawner[] spawners = FindObjectsOfType<AttackerSpawner>();
-
         foreach (AttackerSpawner spawner in spawners)
         {
             if(Mathf.Abs(spawner.transform.position.y - transform.position.y) <= Mathf.Epsilon)
             {
                 laneSpawner = spawner;
+            }
+        }
+    }
+
+    private void Lanning()
+    {
+        if(laneSpawner.transform.childCount <= 0)
+        {
+            foreach(AttackerSpawner spawner in spawners)
+            {
+                if(spawner.transform.childCount > 0)
+                {
+                    laneSpawner = spawner;
+                    transform.position = new Vector2(transform.position.x, spawner.transform.position.y);
+                }
             }
         }
     }
