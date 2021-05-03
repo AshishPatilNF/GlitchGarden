@@ -1,43 +1,67 @@
 fileFormatVersion: 2
-guid: 6631dfedfa9a42542a87013bc831823e
+guid: 4822934c9e62a6b4b8916c403a7e4a55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8189650667827876979
-    second: Fox Running_0
+      213: -7853927463921536899
+    second: Fox Attacking_0
   - first:
-      213: -5447189599148108117
-    second: Fox Running_1
+      213: 5916124386411154456
+    second: Fox Attacking_1
   - first:
-      213: 2411212283926625588
-    second: Fox Running_2
+      213: -7171466401829216591
+    second: Fox Attacking_2
   - first:
-      213: 4183376534722103051
-    second: Fox Running_3
+      213: -4176000490157203261
+    second: Fox Attacking_3
   - first:
-      213: 1878933213425258762
-    second: Fox Running_4
+      213: -1370076621881709435
+    second: Fox Attacking_4
   - first:
-      213: -2102101676120516931
-    second: Fox Running_5
+      213: -3520755948583861071
+    second: Fox Attacking_5
   - first:
-      213: -1248797723352466313
-    second: Fox Running_6
+      213: 5298085759831325463
+    second: Fox Attacking_6
   - first:
-      213: -9066932197608732810
-    second: Fox Running_7
+      213: 3421136715000699548
+    second: Fox Attacking_7
   - first:
-      213: -555244608545739551
-    second: Fox Running_8
+      213: 2441176663286243389
+    second: Fox Attacking_8
   - first:
-      213: 3294793243138151688
-    second: Fox Running_9
+      213: -5262398521963373719
+    second: Fox Attacking_9
   - first:
-      213: -7722825254393066200
-    second: Fox Running_10
+      213: -3012379706829911043
+    second: Fox Attacking_10
   - first:
-      213: -4355890550225760130
-    second: Fox Running_11
+      213: -2177290274888339560
+    second: Fox Attacking_11
+  - first:
+      213: -330150736640777695
+    second: Fox Attacking_12
+  - first:
+      213: -4718209412876840329
+    second: Fox Attacking_13
+  - first:
+      213: 4592492581857311519
+    second: Fox Attacking_14
+  - first:
+      213: 3983459450941701942
+    second: Fox Attacking_15
+  - first:
+      213: -2056233539426760612
+    second: Fox Attacking_16
+  - first:
+      213: 439900338712109710
+    second: Fox Attacking_17
+  - first:
+      213: 4645048730591334420
+    second: Fox Attacking_18
+  - first:
+      213: -451485915897178663
+    second: Fox Attacking_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -199,7 +223,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fox Running_0
+      name: Fox Attacking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b54d559e310390800000000000000
+      internalID: -7853927463921536899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 417
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c0013d8cb4a1250800000000000000
+      internalID: 5916124386411154456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 417
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be1258bd45d97c90800000000000000
+      internalID: -7171466401829216591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_3
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 417
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0a25afdaddb06c0800000000000000
+      internalID: -4176000490157203261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_4
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 417
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c6ca542928cfce0800000000000000
+      internalID: -1370076621881709435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4c0d75e13c32fc0800000000000000
+      internalID: -3520755948583861071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_6
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 278
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b3d489de4968940800000000000000
+      internalID: 5298085759831325463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 278
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ad9a167b15a7f20800000000000000
+      internalID: 3421136715000699548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_8
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 278
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d306629cd3dc0e120800000000000000
+      internalID: 2441176663286243389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 278
+        width: 153
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b15d7fc6438f6b0800000000000000
+      internalID: -5262398521963373719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox Attacking_10
       rect:
         serializedVersion: 2
         x: 0
@@ -213,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 374db6a44eb77a170800000000000000
-      internalID: 8189650667827876979
+      spriteID: dfbcecded90e136d0800000000000000
+      internalID: -3012379706829911043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_1
+      name: Fox Attacking_11
       rect:
         serializedVersion: 2
         x: 153
@@ -234,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba613968be1b764b0800000000000000
-      internalID: -5447189599148108117
+      spriteID: 89f2e50e706b8c1e0800000000000000
+      internalID: -2177290274888339560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_2
+      name: Fox Attacking_12
       rect:
         serializedVersion: 2
         x: 306
@@ -255,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d318d0cc8567120800000000000000
-      internalID: 2411212283926625588
+      spriteID: 122613c77a11b6bf0800000000000000
+      internalID: -330150736640777695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_3
+      name: Fox Attacking_13
       rect:
         serializedVersion: 2
         x: 459
@@ -276,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b07c0d93bc65e0a30800000000000000
-      internalID: 4183376534722103051
+      spriteID: 7725291898d858eb0800000000000000
+      internalID: -4718209412876840329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_4
+      name: Fox Attacking_14
       rect:
         serializedVersion: 2
         x: 612
@@ -297,35 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0155e67dcf431a10800000000000000
-      internalID: 1878933213425258762
+      spriteID: f1bb83fcbafcbbf30800000000000000
+      internalID: 4592492581857311519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_5
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 139
-        width: 153
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db65519b9a5d3d2e0800000000000000
-      internalID: -2102101676120516931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_6
+      name: Fox Attacking_15
       rect:
         serializedVersion: 2
         x: 0
@@ -339,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c724746116baee0800000000000000
-      internalID: -1248797723352466313
+      spriteID: 63f7d8ee347184730800000000000000
+      internalID: 3983459450941701942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_7
+      name: Fox Attacking_16
       rect:
         serializedVersion: 2
         x: 153
@@ -360,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 677caf67439cb2280800000000000000
-      internalID: -9066932197608732810
+      spriteID: c5849338d7ac673e0800000000000000
+      internalID: -2056233539426760612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_8
+      name: Fox Attacking_17
       rect:
         serializedVersion: 2
         x: 306
@@ -381,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec2e2868ff5b48f0800000000000000
-      internalID: -555244608545739551
+      spriteID: e8262810707da1600800000000000000
+      internalID: 439900338712109710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_9
+      name: Fox Attacking_18
       rect:
         serializedVersion: 2
         x: 459
@@ -402,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8055b918ff479bd20800000000000000
-      internalID: 3294793243138151688
+      spriteID: 410964fb537867040800000000000000
+      internalID: 4645048730591334420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fox Running_10
+      name: Fox Attacking_19
       rect:
         serializedVersion: 2
         x: 612
@@ -423,29 +636,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d4c71395303d490800000000000000
-      internalID: -7722825254393066200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fox Running_11
-      rect:
-        serializedVersion: 2
-        x: 765
-        y: 0
-        width: 153
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7010518f94cc83c0800000000000000
-      internalID: -4355890550225760130
+      spriteID: 9d55bd993fffbb9f0800000000000000
+      internalID: -451485915897178663
       vertices: []
       indices: 
       edges: []

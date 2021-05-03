@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347572223}
   - component: {fileID: 1347572224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6020247185042492609}
   - component: {fileID: 8213354469555771150}
   - component: {fileID: 2509809425435715771}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Trophy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6020247185836891699}
   - component: {fileID: 6020247185836891696}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6020247186303350090}
   - component: {fileID: 6020247186303350091}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}

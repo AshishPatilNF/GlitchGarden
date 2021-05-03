@@ -13,6 +13,9 @@ public class Attacker : MonoBehaviour
     [SerializeField]
     private bool vulnerable = false;
 
+    [SerializeField]
+    int enemyID;
+
     private LevelLoader levelLoad;
 
     GameObject currentTarget;
@@ -21,9 +24,12 @@ public class Attacker : MonoBehaviour
 
     Animator animator;
 
+    DefenderSpawner defenderSpawner;
+
     // Start is called before the first frame update
     void Start()
     {
+        defenderSpawner = FindObjectOfType<DefenderSpawner>();
         levelLoad = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();
     }
@@ -33,7 +39,7 @@ public class Attacker : MonoBehaviour
     {
         Movement();
 
-        if (!currentTarget)
+        if(!currentTarget)
         {
             animator.SetBool("isAttacking", false);
         }
@@ -75,6 +81,7 @@ public class Attacker : MonoBehaviour
         DamageDealer damage = otherGameobject.GetComponent<DamageDealer>();
         DefenderResource defender = otherGameobject.GetComponent<DefenderResource>();
 
+
         if (damage && vulnerable)
         {
             health -= damage.GetDamage();
@@ -88,7 +95,11 @@ public class Attacker : MonoBehaviour
             }
         }
 
-        if(defender)
+        if(otherGameobject.CompareTag("GraveStone") && enemyID == 1)
+        {
+            animator.SetTrigger("JumpTrigger");
+        }
+        else if (defender)
         {
             currentTarget = otherGameobject;
             Attack();
