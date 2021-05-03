@@ -5,13 +5,22 @@ using UnityEngine;
 public class DefenderResource : MonoBehaviour
 {
     [SerializeField]
+    int health = 100;
+
+    [SerializeField]
     int cost = 100;
 
+    [SerializeField]
+    GameObject deathVFX;
+
     StartsDisplay starsDispaly;
+
+    LevelLoader levelLoad;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelLoad = FindObjectOfType<LevelLoader>();
         FindObjectOfType<DefenderSpawner>().AddGridOccupancy(transform.position);
         starsDispaly = FindObjectOfType<StartsDisplay>();
     }
@@ -30,5 +39,18 @@ public class DefenderResource : MonoBehaviour
     public int GetDefenderCost()
     {
         return cost;
+    }
+
+    public void DamageHealth(int damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            GameObject newVFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
+            newVFX.transform.parent = levelLoad.GetCleanUpContainer();
+            Destroy(newVFX, 1f);
+            Destroy(this.gameObject);
+        }
     }
 }

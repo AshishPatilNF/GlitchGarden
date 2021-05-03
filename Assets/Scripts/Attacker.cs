@@ -32,6 +32,11 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         Movement();
+
+        if (!currentTarget)
+        {
+            animator.SetBool("isAttacking", false);
+        }
     }
 
     private void Movement()
@@ -52,6 +57,16 @@ public class Attacker : MonoBehaviour
     private void Attack()
     {
         animator.SetBool("isAttacking", true);
+    }
+
+    private void StrikeTarget()
+    {
+        DefenderResource health = currentTarget.GetComponent<DefenderResource>();
+
+        if(health)
+        {
+            health.DamageHealth(GetComponent<DamageDealer>().GetDamage());
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
