@@ -20,6 +20,8 @@ public class Attacker : MonoBehaviour
 
     GameObject currentTarget;
 
+    Vector2 currentTargetPos;
+
     float movementSpeed = 1f;
 
     Animator animator;
@@ -38,8 +40,8 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         Movement();
-
-        if(!currentTarget)
+        
+        if(!defenderSpawner.IsOccupied(currentTargetPos))
         {
             animator.SetBool("isAttacking", false);
         }
@@ -102,6 +104,7 @@ public class Attacker : MonoBehaviour
         else if (defender)
         {
             currentTarget = otherGameobject;
+            currentTargetPos = currentTarget.transform.position;
             Attack();
         }
     }
