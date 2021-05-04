@@ -6,29 +6,21 @@ public class LevelController : MonoBehaviour
 {
     AttackerSpawner[] attackerSpawners;
 
-    GameTimer gameTimer;
+    int attackers = 0;
 
-    List<GameObject> attackers = new List<GameObject>();
+    bool LevelOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
-        gameTimer = FindObjectOfType<GameTimer>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void FinishLevelSpawning()
     {
-        if(gameTimer.IsLevelOver())
-        {
-            StopSpawners();
-        }
-
-        if (attackers.Count == 0 && gameTimer.IsLevelOver())
-        {
-            Debug.Log("End Level");
-        }
+        LevelOver = true;
+        StopSpawners();
     }
 
     private void StopSpawners()
@@ -39,13 +31,18 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    public void AddAttackers(GameObject attacker)
+    public void AddAttackers()
     {
-        attackers.Add(attacker);
+        attackers++;
     }
 
-    public void RemoveAttackers(GameObject attacker)
+    public void RemoveAttackers()
     {
-        attackers.Remove(attacker);
+        attackers--;
+
+        if (attackers <= 0 && LevelOver)
+        {
+            Debug.Log("End Level");
+        }
     }
 }

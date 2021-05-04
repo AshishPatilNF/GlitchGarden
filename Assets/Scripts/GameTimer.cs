@@ -11,30 +11,31 @@ public class GameTimer : MonoBehaviour
 
     Slider slider;
 
-    Animator animator;
+    LevelController levelControll;
 
-    bool levelFinished = false;
+    bool levelDone = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        levelControll = FindObjectOfType<LevelController>();
         slider = GetComponent<Slider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(levelDone)
+        {
+            return;
+        }
+
         slider.value = Time.timeSinceLevelLoad / levelTime;
 
         if(Time.timeSinceLevelLoad >= levelTime)
         {
-            levelFinished = true;
+            levelControll.FinishLevelSpawning();
+            levelDone = true;
         }
-    }
-
-    public bool IsLevelOver()
-    {
-        return levelFinished;
     }
 }

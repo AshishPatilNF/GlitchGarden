@@ -68,7 +68,7 @@ public class DefenderAttacking : MonoBehaviour
 
     private void Lanning()
     {
-        if(laneSpawner.transform.childCount <= 0)
+        if(laneSpawner.transform.childCount <= 0 || GetChildPosition(laneSpawner.transform.GetComponentsInChildren<Attacker>()))
         {
             foreach(AttackerSpawner spawner in spawners)
             {
@@ -81,5 +81,17 @@ public class DefenderAttacking : MonoBehaviour
                 }
             }
         }
+    }
+
+    private bool GetChildPosition(Attacker[] attackers)
+    {
+        foreach(Attacker attacker in attackers)
+        {
+            if(attacker.transform.position.x <= transform.position.x)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

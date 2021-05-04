@@ -30,14 +30,22 @@ public class Attacker : MonoBehaviour
 
     LevelController levelControll;
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AddAttackers();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        levelControll = FindObjectOfType<LevelController>();
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         levelLoad = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();
-        levelControll.AddAttackers(this.gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().RemoveAttackers();
     }
 
     // Update is called once per frame
@@ -97,7 +105,6 @@ public class Attacker : MonoBehaviour
                 GameObject newVFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
                 newVFX.transform.parent = levelLoad.GetCleanUpContainer();
                 Destroy(newVFX, 1f);
-                levelControll.RemoveAttackers(this.gameObject);
                 Destroy(this.gameObject);
             }
         }

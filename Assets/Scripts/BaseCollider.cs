@@ -15,6 +15,5 @@ public class BaseCollider : MonoBehaviour
     {
         lives.ReduceLive();
         Destroy(collision.gameObject);
-        FindObjectOfType<LevelController>().RemoveAttackers(collision.gameObject);
     }
 }
