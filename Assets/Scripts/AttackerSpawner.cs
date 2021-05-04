@@ -33,4 +33,9 @@ public class AttackerSpawner : MonoBehaviour
         GameObject newAttacker = Instantiate(attackersPrefabs[Random.Range(0, attackersPrefabs.Length)], transform.position, Quaternion.identity);
         newAttacker.transform.parent = transform;
     }
+
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
 }

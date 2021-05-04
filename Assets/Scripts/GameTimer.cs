@@ -13,6 +13,8 @@ public class GameTimer : MonoBehaviour
 
     Animator animator;
 
+    bool levelFinished = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +29,12 @@ public class GameTimer : MonoBehaviour
 
         if(Time.timeSinceLevelLoad >= levelTime)
         {
-            Debug.Log("Level Finished");
+            levelFinished = true;
         }
+    }
+
+    public bool IsLevelOver()
+    {
+        return levelFinished;
     }
 }
