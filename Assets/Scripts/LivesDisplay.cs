@@ -5,6 +5,9 @@ using TMPro;
 
 public class LivesDisplay : MonoBehaviour
 {
+    [SerializeField]
+    GameObject looseLabel;
+
     int Lives = 99;
 
     TextMeshProUGUI text;
@@ -13,6 +16,7 @@ public class LivesDisplay : MonoBehaviour
 
     private void Start()
     {
+        looseLabel.SetActive(false);
         level = FindObjectOfType<LevelLoader>();
         text = GetComponent<TextMeshProUGUI>();
         DisplayLives();
@@ -26,11 +30,15 @@ public class LivesDisplay : MonoBehaviour
     public void ReduceLive()
     {
         Lives--;
+        if(Lives < 0)
+        {
+            Lives = 0;
+        }
         DisplayLives();
         if(Lives <= 0)
         {
-            Lives = 0;
-            level.LoadScene(1);
+            Time.timeScale = 0;
+            looseLabel.SetActive(true);
         }
     }
 }

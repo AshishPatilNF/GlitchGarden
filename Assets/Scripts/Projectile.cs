@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
-        transform.Rotate(0, 0, -8);
+        transform.Rotate(0, 0, -1000 * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

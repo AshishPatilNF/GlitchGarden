@@ -20,9 +20,9 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
-    public void LoadScene(int index, float delay = 1f)
+    public void LoadStartMenu(float delay = 1f)
     {
-        StartCoroutine(WaitAndLoadLevel(index, delay));
+        StartCoroutine(WaitAndLoadLevel(1, delay));
     }
 
     public void LoadNextScene(float delay = 1f)
@@ -30,9 +30,15 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(WaitAndLoadLevel(currentIndex + 1, delay));
     }
 
+    public void RestartLevel(float delay = 1f)
+    {
+        StartCoroutine(WaitAndLoadLevel(currentIndex, delay));
+    }
+
     IEnumerator WaitAndLoadLevel(int index,float delay)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSecondsRealtime(delay);
+        Time.timeScale = 1;
         SceneManager.LoadScene(index);
     }
 

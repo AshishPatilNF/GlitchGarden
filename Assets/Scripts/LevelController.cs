@@ -18,6 +18,7 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         levelLoad = FindObjectOfType<LevelLoader>();
         winLabel.SetActive(false);
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
@@ -49,8 +50,14 @@ public class LevelController : MonoBehaviour
 
         if (attackers <= 0 && LevelOver)
         {
-            winLabel.SetActive(true);
-            levelLoad.LoadScene(1, 5f);
+            StartCoroutine(EndLevel());
         }
+    }
+
+    IEnumerator EndLevel()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        Time.timeScale = 0;
+        winLabel.SetActive(true);
     }
 }
