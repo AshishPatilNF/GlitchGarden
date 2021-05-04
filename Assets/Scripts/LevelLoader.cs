@@ -16,21 +16,21 @@ public class LevelLoader : MonoBehaviour
 
         if(currentIndex == 0)
         {
-            StartCoroutine(WaitAndLoadLevel(currentIndex + 1, 3.5f));
+            LoadNextScene(3.5f);
         }
     }
 
-    public void LoadScene(int index)
+    public void LoadScene(int index, float delay = 1f)
     {
-        StartCoroutine(WaitAndLoadLevel(index));
+        StartCoroutine(WaitAndLoadLevel(index, delay));
     }
 
-    public void LoadNextScene()
+    public void LoadNextScene(float delay = 1f)
     {
-        StartCoroutine(WaitAndLoadLevel(currentIndex + 1));
+        StartCoroutine(WaitAndLoadLevel(currentIndex + 1, delay));
     }
 
-    IEnumerator WaitAndLoadLevel(int index, float delay = 1)
+    IEnumerator WaitAndLoadLevel(int index,float delay)
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(index);

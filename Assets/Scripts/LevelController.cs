@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
+    [SerializeField]
+    GameObject winLabel;
+
     AttackerSpawner[] attackerSpawners;
+
+    LevelLoader levelLoad;
 
     int attackers = 0;
 
@@ -13,6 +18,8 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelLoad = FindObjectOfType<LevelLoader>();
+        winLabel.SetActive(false);
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
     }
 
@@ -42,7 +49,8 @@ public class LevelController : MonoBehaviour
 
         if (attackers <= 0 && LevelOver)
         {
-            Debug.Log("End Level");
+            winLabel.SetActive(true);
+            levelLoad.LoadScene(1, 5f);
         }
     }
 }

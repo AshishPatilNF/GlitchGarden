@@ -72,7 +72,7 @@ public class DefenderAttacking : MonoBehaviour
         {
             foreach(AttackerSpawner spawner in spawners)
             {
-                if(spawner.transform.childCount > 0 && !defenderSpawner.IsOccupied(new Vector2(transform.position.x, spawner.transform.position.y)))
+                if(spawner.transform.childCount > 0 && !defenderSpawner.IsOccupied(new Vector2(transform.position.x, spawner.transform.position.y)) && !GetChildPosition(spawner.transform.GetComponentsInChildren<Attacker>()))
                 {
                     defenderSpawner.RemoveGridOccupancy(transform.position);
                     laneSpawner = spawner;
@@ -87,11 +87,11 @@ public class DefenderAttacking : MonoBehaviour
     {
         foreach(Attacker attacker in attackers)
         {
-            if(attacker.transform.position.x <= transform.position.x)
+            if(attacker.transform.position.x >= transform.position.x)
             {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }
