@@ -56,7 +56,7 @@ public class LevelController : MonoBehaviour
 
     IEnumerator EndLevel()
     {
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(2);
         Time.timeScale = 0;
         winLabel.SetActive(true);
     }

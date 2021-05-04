@@ -12,20 +12,27 @@ public class AttackerSpawner : MonoBehaviour
     
     bool spawn = true;
 
+    Coroutine spawning;
+
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
-        while(spawn)
-        {
-            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxsSpawnTime));
-            SpawnAttacker();
-        }
+        spawning = StartCoroutine(StartSpawning());
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
+    IEnumerator StartSpawning()
+    {
+        while (spawn)
+        {
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxsSpawnTime));
+            SpawnAttacker();
+        }
     }
 
     private void SpawnAttacker()
@@ -37,5 +44,6 @@ public class AttackerSpawner : MonoBehaviour
     public void StopSpawning()
     {
         spawn = false;
+        StopCoroutine(spawning);
     }
 }

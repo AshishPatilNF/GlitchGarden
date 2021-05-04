@@ -1011,7 +1011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1599577843496932524, guid: e0c0e46b4b83aa44e91d8460d9d969a9, type: 3}
       propertyPath: levelTime
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1599577843975672017, guid: e0c0e46b4b83aa44e91d8460d9d969a9, type: 3}
       propertyPath: m_AnchorMax.x
