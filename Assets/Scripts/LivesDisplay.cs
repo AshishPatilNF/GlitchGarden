@@ -8,7 +8,7 @@ public class LivesDisplay : MonoBehaviour
     [SerializeField]
     GameObject looseLabel;
 
-    int Lives = 10;
+    int Lives = 1;
 
     TextMeshProUGUI text;
 

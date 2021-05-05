@@ -16,15 +16,19 @@ public class LevelLoader : MonoBehaviour
 
         if(currentIndex == 0)
         {
-            LoadNextScene(3.5f);
+            LoadStartMenu(4f);
         }
     }
 
     public void LoadStartMenu(float delay = 1f)
     {
-        StartCoroutine(WaitAndLoadLevel(1, delay));
+        StartCoroutine(WaitAndLoadLevel(2, delay));
     }
 
+    public void LoadScene(int indexI)
+    {
+        StartCoroutine(WaitAndLoadLevel(indexI, 1f));
+    }
     public void LoadNextScene(float delay = 1f)
     {
         StartCoroutine(WaitAndLoadLevel(currentIndex + 1, delay));

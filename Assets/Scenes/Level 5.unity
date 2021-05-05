@@ -646,6 +646,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 911855675, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_Name
+      value: ReplayLevelButtonText
+      objectReference: {fileID: 0}
+    - target: {fileID: 911855677, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_text
+      value: Replay Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 946918585, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_Name
+      value: ReplayLevelButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 946918586, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 946918586, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 946918587, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 751907481}
+    - target: {fileID: 946918587, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 1000179438930141, guid: 821ecf123ccc9454797fbb3327f63c6c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1920
@@ -1197,6 +1225,10 @@ PrefabInstance:
     - target: {fileID: 7874799632973099154, guid: c2e765c108d2d684e8f7cea0a75ea34f, type: 3}
       propertyPath: m_Color.a
       value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059164265929498351, guid: c2e765c108d2d684e8f7cea0a75ea34f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2e765c108d2d684e8f7cea0a75ea34f, type: 3}
