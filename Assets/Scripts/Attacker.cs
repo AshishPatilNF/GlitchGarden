@@ -41,6 +41,7 @@ public class Attacker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health *= PlayerPrefsController.GetDifficulty();
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         levelLoad = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();

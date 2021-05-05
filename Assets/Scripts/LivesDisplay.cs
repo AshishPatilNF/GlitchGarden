@@ -12,12 +12,9 @@ public class LivesDisplay : MonoBehaviour
 
     TextMeshProUGUI text;
 
-    LevelLoader level;
-
     private void Start()
     {
         looseLabel.SetActive(false);
-        level = FindObjectOfType<LevelLoader>();
         text = GetComponent<TextMeshProUGUI>();
         DisplayLives();
     }

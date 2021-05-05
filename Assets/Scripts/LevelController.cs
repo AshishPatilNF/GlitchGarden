@@ -9,8 +9,6 @@ public class LevelController : MonoBehaviour
 
     AttackerSpawner[] attackerSpawners;
 
-    LevelLoader levelLoad;
-
     int attackers = 0;
 
     bool LevelOver = false;
@@ -19,7 +17,6 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
-        levelLoad = FindObjectOfType<LevelLoader>();
         winLabel.SetActive(false);
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
     }
