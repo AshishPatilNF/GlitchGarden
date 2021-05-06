@@ -9,6 +9,8 @@ public class LevelController : MonoBehaviour
 
     AttackerSpawner[] attackerSpawners;
 
+    LivesDisplay livesDisplay;
+
     int attackers = 0;
 
     bool LevelOver = false;
@@ -16,6 +18,7 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+        livesDisplay = FindObjectOfType<LivesDisplay>();
         winLabel.SetActive(false);
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
     }
@@ -43,7 +46,7 @@ public class LevelController : MonoBehaviour
     {
         attackers--;
 
-        if (attackers <= 0 && LevelOver)
+        if (attackers <= 0 && LevelOver && livesDisplay.GetLives() > 0)
         {
             StartCoroutine(EndLevel());
         }

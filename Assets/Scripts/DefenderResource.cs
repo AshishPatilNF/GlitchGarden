@@ -5,7 +5,7 @@ using UnityEngine;
 public class DefenderResource : MonoBehaviour
 {
     [SerializeField]
-    int health = 100;
+    float health = 100;
 
     [SerializeField]
     int cost = 100;
@@ -37,7 +37,7 @@ public class DefenderResource : MonoBehaviour
         return cost;
     }
 
-    public void DamageHealth(int damage)
+    public void DamageHealth(float damage)
     {
         health -= damage;
 

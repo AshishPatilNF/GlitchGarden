@@ -6,11 +6,11 @@ public class Projectile : MonoBehaviour
 {
     float speed = 2f;
 
-    int health = 1;
+    float health = 1;
 
-    void Start()
+    private void Start()
     {
-        
+        GetComponent<DamageDealer>().SetDamage(PlayerPrefsController.GetDifficulty() * 1.25f);
     }
 
     void Update()

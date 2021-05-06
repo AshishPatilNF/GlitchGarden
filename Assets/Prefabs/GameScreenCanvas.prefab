@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 1599577843496932525}
   - component: {fileID: 1599577843496932524}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: LevelSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,7 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b707c308885b09e4e84e45b8f8b3aba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 20
+  levelTime: 40
 --- !u!1 &1599577843975672018
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,8 +948,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -465, y: -465}
-  m_SizeDelta: {x: 250, y: 80}
+  m_AnchoredPosition: {x: 600, y: -475}
+  m_SizeDelta: {x: 235, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1599577844010781647
 CanvasRenderer:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 1024
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1060,4 +1060,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b331bbda700bc408f0b393774af697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 1000
+  stars: 100

@@ -8,6 +8,7 @@ public class LivesDisplay : MonoBehaviour
     [SerializeField]
     GameObject looseLabel;
 
+    [SerializeField]
     int Lives = 25;
 
     TextMeshProUGUI text;
@@ -37,5 +38,10 @@ public class LivesDisplay : MonoBehaviour
             Time.timeScale = 0;
             looseLabel.SetActive(true);
         }
+    }
+
+    public int GetLives()
+    {
+        return Lives;
     }
 }

@@ -8,7 +8,7 @@ public class Attacker : MonoBehaviour
     GameObject deathVFX;
 
     [SerializeField]
-    int health = 20;
+    float health = 20;
 
     [SerializeField]
     private bool vulnerable = false;
