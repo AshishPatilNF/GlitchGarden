@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DefenderButton : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DefenderButton : MonoBehaviour
     {
         defendSpawn = FindObjectOfType<DefenderSpawner>();
         defenders = FindObjectsOfType<DefenderButton>();
+        GetComponentInChildren<TextMeshProUGUI>().text = defendPrefab.GetDefenderCost().ToString();
     }
 
     private void OnMouseDown()

@@ -14,16 +14,9 @@ public class AttackerSpawner : MonoBehaviour
 
     Coroutine spawning;
 
-    // Start is called before the first frame update
     void Start()
     {
         spawning = StartCoroutine(StartSpawning());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator StartSpawning()

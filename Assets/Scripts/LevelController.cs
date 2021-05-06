@@ -13,7 +13,6 @@ public class LevelController : MonoBehaviour
 
     bool LevelOver = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
@@ -21,7 +20,6 @@ public class LevelController : MonoBehaviour
         attackerSpawners = FindObjectsOfType<AttackerSpawner>();
     }
 
-    // Update is called once per frame
     public void FinishLevelSpawning()
     {
         LevelOver = true;

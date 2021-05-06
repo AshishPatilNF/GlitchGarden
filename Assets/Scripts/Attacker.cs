@@ -38,7 +38,6 @@ public class Attacker : MonoBehaviour
             levelControll.AddAttackers();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         health *= PlayerPrefsController.GetDifficulty();
@@ -53,7 +52,6 @@ public class Attacker : MonoBehaviour
             levelControll.RemoveAttackers();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Movement();
@@ -108,7 +106,7 @@ public class Attacker : MonoBehaviour
             if (health <= 0)
             {
                 GameObject newVFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
-                newVFX.transform.parent = levelLoad.GetCleanUpContainer();
+                newVFX.transform.parent = levelLoad.VFXContainer();
                 Destroy(newVFX, 1f);
                 Destroy(this.gameObject);
             }

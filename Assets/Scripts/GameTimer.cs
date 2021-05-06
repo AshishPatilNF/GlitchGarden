@@ -15,14 +15,12 @@ public class GameTimer : MonoBehaviour
 
     bool levelDone = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         levelControll = FindObjectOfType<LevelController>();
         slider = GetComponent<Slider>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(levelDone)

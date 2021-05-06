@@ -19,7 +19,6 @@ public class OptionsController : MonoBehaviour
 
     LevelLoader levelLoader;
 
-    // Start is called before the first frame update
     void Start()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
@@ -28,7 +27,6 @@ public class OptionsController : MonoBehaviour
         difficultySlider.value = PlayerPrefsController.GetDifficulty();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(musicPlayer)

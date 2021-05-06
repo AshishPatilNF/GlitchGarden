@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     [SerializeField]
-    GameObject cleanUpContainer;
+    GameObject vfxContainer;
 
     int currentIndex;
 
@@ -51,8 +51,8 @@ public class LevelLoader : MonoBehaviour
         Application.Quit();
     }
 
-    public Transform GetCleanUpContainer()
+    public Transform VFXContainer()
     {
-        return cleanUpContainer.transform;
+        return vfxContainer.transform;
     }
 }

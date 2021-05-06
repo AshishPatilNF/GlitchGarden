@@ -19,19 +19,12 @@ public class DefenderResource : MonoBehaviour
 
     DefenderSpawner defenderSpawner;
 
-    // Start is called before the first frame update
     void Start()
     {
         levelLoad = FindObjectOfType<LevelLoader>();
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         starsDispaly = FindObjectOfType<StartsDisplay>();
         defenderSpawner.AddGridOccupancy(transform.position);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void AddStars(int amount)
@@ -51,7 +44,7 @@ public class DefenderResource : MonoBehaviour
         if(health <= 0)
         {
             GameObject newVFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
-            newVFX.transform.parent = levelLoad.GetCleanUpContainer();
+            newVFX.transform.parent = levelLoad.VFXContainer();
             Destroy(newVFX, 1f);
             defenderSpawner.RemoveGridOccupancy(transform.position);
             Destroy(this.gameObject);

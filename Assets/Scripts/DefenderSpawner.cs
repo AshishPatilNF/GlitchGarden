@@ -9,13 +9,15 @@ public class DefenderSpawner : MonoBehaviour
 
     StartsDisplay starsDisplay;
 
-    LevelLoader levelLoading;
+    GameObject defendersSpawned;
 
     List<Vector2> gridOccupancy = new List<Vector2>();
 
     private void Start()
     {
-        levelLoading = FindObjectOfType<LevelLoader>();
+        defendersSpawned = GameObject.Find("Defenders");
+        if (!defendersSpawned)
+            defendersSpawned = new GameObject("Defenders");
         starsDisplay = FindObjectOfType<StartsDisplay>();
     }
 
@@ -25,7 +27,7 @@ public class DefenderSpawner : MonoBehaviour
         {
             starsDisplay.SpendStars(defender.GetDefenderCost());
             GameObject newDefender = Instantiate(defender.gameObject, GetSquareClicked(), Quaternion.identity);
-            newDefender.transform.parent = levelLoading.GetCleanUpContainer();
+            newDefender.transform.parent = defendersSpawned.transform;
         }
     }
 

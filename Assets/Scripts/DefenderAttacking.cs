@@ -11,8 +11,6 @@ public class DefenderAttacking : MonoBehaviour
     [SerializeField]
     bool laner = false;
 
-    LevelLoader levelLoading;
-
     AttackerSpawner laneSpawner;
 
     AttackerSpawner[] spawners; 
@@ -21,17 +19,19 @@ public class DefenderAttacking : MonoBehaviour
 
     DefenderSpawner defenderSpawner;
 
-    // Start is called before the first frame update
+    GameObject projectileContainer;
+
     void Start()
     {
+        projectileContainer = GameObject.Find("Projectiles");
+        if (!projectileContainer)
+            projectileContainer = new GameObject("Projectiles");
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         spawners = FindObjectsOfType<AttackerSpawner>();
-        levelLoading = FindObjectOfType<LevelLoader>();
         animator = GetComponent<Animator>();
         SetAttackerSpawner();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(laner)
@@ -52,7 +52,7 @@ public class DefenderAttacking : MonoBehaviour
     private void AttackProjectile()
     {
         GameObject newZucchi = Instantiate(projectile, gun.transform.position, Quaternion.identity);
-        newZucchi.transform.parent = levelLoading.GetCleanUpContainer();
+        newZucchi.transform.parent = projectileContainer.transform;
     }
 
     private void SetAttackerSpawner()
