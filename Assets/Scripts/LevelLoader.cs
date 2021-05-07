@@ -20,6 +20,14 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
+    }
+
     public void LoadStartMenu(float delay = 1f)
     {
         StartCoroutine(WaitAndLoadLevel(2, delay));

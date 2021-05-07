@@ -8,13 +8,14 @@ public class LivesDisplay : MonoBehaviour
     [SerializeField]
     GameObject looseLabel;
 
-    [SerializeField]
-    int Lives = 25;
+    int Lives = 5;
 
     TextMeshProUGUI text;
 
     private void Start()
     {
+        if(PlayerPrefsController.GetDifficulty() > 1)
+            Lives -= PlayerPrefsController.GetDifficulty();
         looseLabel.SetActive(false);
         text = GetComponent<TextMeshProUGUI>();
         DisplayLives();

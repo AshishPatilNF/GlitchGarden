@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<DamageDealer>().SetDamage(PlayerPrefsController.GetDifficulty() * 1.25f);
+        GetComponent<DamageDealer>().SetDamage(PlayerPrefsController.GetDifficulty() * 1.5f);
     }
 
     void Update()

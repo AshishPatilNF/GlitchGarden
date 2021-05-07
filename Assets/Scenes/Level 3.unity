@@ -892,7 +892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 624949974996956564, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1737448019317508538, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: m_IsActive
@@ -906,17 +906,9 @@ PrefabInstance:
       propertyPath: maxsSpawnTime
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 3632932876754107146, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: attackersPrefabs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632932876754107146, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: attackersPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 3961686257443924735, guid: 3cc622e6ac79ae041af8052cae2a7dda, type: 3}
     - target: {fileID: 3632932877282132981, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: minSpawnTime
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3632932877282132981, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: maxsSpawnTime
@@ -938,22 +930,6 @@ PrefabInstance:
       propertyPath: maxsSpawnTime
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: minSpawnTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: maxsSpawnTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: attackersPrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
-      propertyPath: attackersPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 81913308099389158, guid: d712c8f4ac4b4e646a8cd1cc336f3e06, type: 3}
     - target: {fileID: 4221956619239830748, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: m_Name
       value: Spawners
@@ -1145,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597316723277359701, guid: d78e47d23ded8194ea85a8ff52348aed, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78e47d23ded8194ea85a8ff52348aed, type: 3}
@@ -1401,10 +1377,6 @@ PrefabInstance:
     - target: {fileID: 9214255526819138709, guid: 794223643f2e9bd4ea7b0f8e8cd5c1bf, type: 3}
       propertyPath: m_Name
       value: RestrictionColliders
-      objectReference: {fileID: 0}
-    - target: {fileID: 9214255527580936833, guid: 794223643f2e9bd4ea7b0f8e8cd5c1bf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214255527580936835, guid: 794223643f2e9bd4ea7b0f8e8cd5c1bf, type: 3}
       propertyPath: m_Size.x
