@@ -8,11 +8,6 @@ public class Projectile : MonoBehaviour
 
     float health = 1;
 
-    private void Start()
-    {
-        GetComponent<DamageDealer>().SetDamage(PlayerPrefsController.GetDifficulty() * 1.5f);
-    }
-
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);

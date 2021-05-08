@@ -8,7 +8,7 @@ public class AttackerSpawner : MonoBehaviour
     GameObject[] attackersPrefabs;
 
     [SerializeField]
-    float minSpawnTime = 1, maxsSpawnTime = 6;
+    float minSpawnTime = 1, maxSpawnTime = 6;
     
     bool spawn = true;
 
@@ -23,7 +23,8 @@ public class AttackerSpawner : MonoBehaviour
     {
         while (spawn)
         {
-            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxsSpawnTime));
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
+            Debug.Log(this.gameObject.name + "-" + Time.time);
             SpawnAttacker();
         }
     }

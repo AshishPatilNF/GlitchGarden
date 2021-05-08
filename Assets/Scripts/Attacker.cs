@@ -84,11 +84,13 @@ public class Attacker : MonoBehaviour
 
     private void StrikeTarget()
     {
+        if (!currentTarget)
+            return;
         DefenderResource health = currentTarget.GetComponent<DefenderResource>();
 
         if(health)
         {
-            health.DamageHealth(GetComponent<DamageDealer>().GetDamage());
+            health.DamageHealth(GetComponent<DamageDealer>().GetDamage() * Random.Range(1, 1.2f));
         }
     }
 
