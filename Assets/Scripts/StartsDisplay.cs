@@ -5,8 +5,7 @@ using TMPro;
 
 public class StartsDisplay : MonoBehaviour
 {
-    [SerializeField]
-    int stars = 100;
+    float stars = 100;
 
     TextMeshProUGUI text;
 

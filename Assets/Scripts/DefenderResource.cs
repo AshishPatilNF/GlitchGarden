@@ -21,6 +21,7 @@ public class DefenderResource : MonoBehaviour
 
     void Start()
     {
+        health *= PlayerPrefsController.GetDifficulty();
         levelLoad = FindObjectOfType<LevelLoader>();
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         starsDispaly = FindObjectOfType<StartsDisplay>();
