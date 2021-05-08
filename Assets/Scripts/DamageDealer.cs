@@ -12,7 +12,7 @@ public class DamageDealer : MonoBehaviour
     private void Start()
     {
         multiplier = PlayerPrefsController.GetDifficulty();
-        damage *= Random.Range(multiplier, multiplier * 1.5f);
+        damage *= Random.Range(multiplier, multiplier * 1.7f);
     }
 
     public float GetDamage()

@@ -90,7 +90,7 @@ public class Attacker : MonoBehaviour
 
         if(health)
         {
-            health.DamageHealth(GetComponent<DamageDealer>().GetDamage() * Random.Range(1, 1.2f));
+            health.DamageHealth(GetComponent<DamageDealer>().GetDamage());
         }
     }
 
@@ -103,7 +103,7 @@ public class Attacker : MonoBehaviour
 
         if (damage && vulnerable)
         {
-            health -= damage.GetDamage();
+            health -= damage.GetDamage() * 1.01f;
 
             if (health <= 0)
             {

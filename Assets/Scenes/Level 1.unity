@@ -936,7 +936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632932877282132981, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: minSpawnTime
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3632932877282132981, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: maxsSpawnTime
@@ -950,6 +950,10 @@ PrefabInstance:
       propertyPath: attackersPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 81913308099389158, guid: d712c8f4ac4b4e646a8cd1cc336f3e06, type: 3}
+    - target: {fileID: 3632932877623690521, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
+      propertyPath: maxSpawnTime
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3632932877623690521, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: minSpawnTime
       value: 2
