@@ -7,6 +7,8 @@ public class StartsDisplay : MonoBehaviour
 {
     float stars = 100;
 
+    int starCount;
+
     TextMeshProUGUI text;
 
     void Start()
@@ -20,9 +22,10 @@ public class StartsDisplay : MonoBehaviour
         text.text = stars.ToString();
     }
 
-    public void AddStars(int amount)
+    public void AddStars(float amount)
     {
-        stars += amount;
+        amount -= 0.5f * starCount;
+        stars += (int)(amount);
         UpdateStars();
     }
 
@@ -38,5 +41,15 @@ public class StartsDisplay : MonoBehaviour
     public bool HasEnoughStars(int amount)
     {
         return stars >= amount;
+    }
+
+    public void AddStarCount()
+    {
+        starCount++;
+    }
+
+    public void ReduceStarCount()
+    {
+        starCount--;
     }
 }

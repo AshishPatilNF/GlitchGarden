@@ -24,7 +24,6 @@ public class AttackerSpawner : MonoBehaviour
         while (spawn)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
-            Debug.Log(this.gameObject.name + "-" + Time.time);
             SpawnAttacker();
         }
     }

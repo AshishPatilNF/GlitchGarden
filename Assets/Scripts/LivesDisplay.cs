@@ -14,8 +14,10 @@ public class LivesDisplay : MonoBehaviour
 
     private void Start()
     {
-        if(PlayerPrefsController.GetDifficulty() > 1)
-            Lives -= PlayerPrefsController.GetDifficulty();
+        if (PlayerPrefsController.GetDifficulty() < 3)
+            Lives = 3;
+        else
+            Lives = 2;
         looseLabel.SetActive(false);
         text = GetComponent<TextMeshProUGUI>();
         DisplayLives();

@@ -47,6 +47,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gnome
       objectReference: {fileID: 0}
+    - target: {fileID: 5488313865302752276, guid: cd4d64fe7f8e89345a9c93250782e60a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5488313865302752277, guid: cd4d64fe7f8e89345a9c93250782e60a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -108,6 +112,10 @@ PrefabInstance:
     - target: {fileID: 4773947362159360372, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
       propertyPath: m_Name
       value: Gravestone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773947362159360372, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4773947362159360374, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
       propertyPath: m_RootOrder
@@ -215,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trophy
       objectReference: {fileID: 0}
+    - target: {fileID: 6020247185042492611, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
 --- !u!4 &6020247186085295066 stripped
@@ -235,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5588022780430813270, guid: 2652f0c71d5d6674b99dd865d1260223, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5588022780430813270, guid: 2652f0c71d5d6674b99dd865d1260223, type: 3}
       propertyPath: m_LocalPosition.y
@@ -294,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 4773947362159360372, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
       propertyPath: m_Name
       value: Gravestone
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773947362159360372, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4773947362159360374, guid: d43ab13bb47f7244bbdffd7ef3a3b5df, type: 3}
       propertyPath: m_RootOrder
@@ -400,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 6020247185042492611, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
       propertyPath: m_Name
       value: Trophy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020247185042492611, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773d23b8aa7cfd141a57167222c8e079, type: 3}

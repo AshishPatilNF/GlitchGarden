@@ -1060,4 +1060,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b331bbda700bc408f0b393774af697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 100

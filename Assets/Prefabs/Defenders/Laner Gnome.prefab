@@ -95,6 +95,7 @@ MonoBehaviour:
   health: 50
   cost: 250
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  defenderID: 4
 --- !u!114 &2646613038377446075
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,9 @@ public class DefenderResource : MonoBehaviour
     [SerializeField]
     GameObject deathVFX;
 
+    [SerializeField]
+    int defenderID;
+
     StartsDisplay starsDispaly;
 
     LevelLoader levelLoad;
@@ -26,9 +29,14 @@ public class DefenderResource : MonoBehaviour
         defenderSpawner = FindObjectOfType<DefenderSpawner>();
         starsDispaly = FindObjectOfType<StartsDisplay>();
         defenderSpawner.AddGridOccupancy(transform.position);
+
+        if(defenderID == 0)
+        {
+            starsDispaly.AddStarCount();
+        }
     }
 
-    private void AddStars(int amount)
+    private void AddStars(float amount)
     {
         starsDispaly.AddStars(amount);
     }
@@ -48,6 +56,7 @@ public class DefenderResource : MonoBehaviour
             newVFX.transform.parent = levelLoad.VFXContainer();
             Destroy(newVFX, 1f);
             defenderSpawner.RemoveGridOccupancy(transform.position);
+            starsDispaly.ReduceStarCount();
             Destroy(this.gameObject);
         }
     }
