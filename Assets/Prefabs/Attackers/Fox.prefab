@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
-  health: 400
+  health: 50
   vulnerable: 0
   enemyID: 1
 --- !u!114 &3961686257443924734

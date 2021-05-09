@@ -228,6 +228,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrePlacedDefenders
       objectReference: {fileID: 0}
+    - target: {fileID: 4773947362400724242, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488313865814056144, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6020247186085295065, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -886,6 +894,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 624949974996956564, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3632932876754107146, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: maxSpawnTime
       value: 15
@@ -1288,7 +1300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214255527580936833, guid: 794223643f2e9bd4ea7b0f8e8cd5c1bf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214255527580936835, guid: 794223643f2e9bd4ea7b0f8e8cd5c1bf, type: 3}
       propertyPath: m_Size.y
