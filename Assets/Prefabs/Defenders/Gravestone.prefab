@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9b2d35fc80bc24bb44a4173758df29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 250
-  cost: 80
+  health: 150
+  cost: 75
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
   defenderID: 2
