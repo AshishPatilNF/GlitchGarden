@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrePlacedDefenders
       objectReference: {fileID: 0}
+    - target: {fileID: 172768500303984469, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4773947362400724242, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -236,13 +240,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5492360556870889372, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492360558389776983, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6020247186085295065, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945118694297204695, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8114323199369634959, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832205888826223637, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9629a4e9505de6849afb455dd63c4780, type: 3}
@@ -918,6 +938,14 @@ PrefabInstance:
       propertyPath: maxSpawnTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
+      propertyPath: attackersPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632932878125664715, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
+      propertyPath: attackersPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 81913308099389158, guid: d712c8f4ac4b4e646a8cd1cc336f3e06, type: 3}
     - target: {fileID: 4221956619239830748, guid: fd8c71cfca73c1a44ae30bd433e91bbf, type: 3}
       propertyPath: m_Name
       value: Spawners
@@ -1068,6 +1096,10 @@ PrefabInstance:
       value: Buttons
       objectReference: {fileID: 0}
     - target: {fileID: 5597316723102042644, guid: d78e47d23ded8194ea85a8ff52348aed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597316723277359701, guid: d78e47d23ded8194ea85a8ff52348aed, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
