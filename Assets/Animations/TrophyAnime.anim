@@ -2218,6 +2218,6 @@ AnimationClip:
     functionName: AddStars
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
+    floatParameter: 8.5
     intParameter: 8
     messageOptions: 0
