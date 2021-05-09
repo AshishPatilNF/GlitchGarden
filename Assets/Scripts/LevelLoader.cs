@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour
 
         if(currentIndex == 0)
         {
-            LoadStartMenu(4f);
+            LoadNextScene(4f);
         }
     }
 

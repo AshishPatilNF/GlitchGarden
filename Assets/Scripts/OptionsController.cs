@@ -11,7 +11,7 @@ public class OptionsController : MonoBehaviour
     [SerializeField]
     Slider difficultySlider;
 
-    float defaultVolume = 0.8f;
+    float defaultVolume = 0.4f;
 
     int defaultDifficulty = 1;
 

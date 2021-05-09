@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
@@ -57,5 +58,8 @@ public class LevelController : MonoBehaviour
         yield return new WaitForSecondsRealtime(2);
         Time.timeScale = 0;
         winLabel.SetActive(true);
+
+        if (SceneManager.GetActiveScene().buildIndex == 7)
+            FindObjectOfType<LevelLoader>().LoadNextScene(3);
     }
 }
