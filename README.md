@@ -11,6 +11,6 @@ Glitch Garden is a 2D Tower Defense game.
 
 3. Player can "Quit" the game at any given moment using the "Q key".
 
-This project was developed for the better understanding of Unity Engine's Animator component, Animations, Keyframe Animations, Anime Events, transform.Translate and PlayerPrefs and C# constant variabels (const keyword), static members of the class and other basic fundamentals.
+This project was developed for the better understanding of Unity Engine's Animator component, Animations, Keyframe Animations, Anime Events, Time.timescale, transform.Translate and PlayerPrefs and C# constant variabels (const keyword), static members of the class and other basic fundamentals.
 
 This project was developed as a part of the Udemy course "Complete C# Unity Game Developer 2D" under the guidance of Rick Davidson and Ben Tristem.
